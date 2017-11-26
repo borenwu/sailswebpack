@@ -1,0 +1,42 @@
+{
+  "name": "sails-webpack-seed",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "async": "2.0.1",
+    "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.11",
+    "include-all": "^1.0.0",
+    "jquery": "^3.2.1",
+    "lodash": "3.10.1",
+    "rc": "1.0.1",
+    "sails": "~0.12.13",
+    "sails-disk": "~0.10.9",
+    "sails-generate-views-handlebars": "^0.10.4",
+    "webpack": "2.2.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "0.1.16",
+    "copy-webpack-plugin": "4.0.1",
+    "css-loader": "0.27.3",
+    "ejs-loader": "0.3.0",
+    "extract-text-webpack-plugin": "2.1.0",
+    "file-loader": "^1.1.5",
+    "less": "2.7.2",
+    "less-loader": "4.0.1"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "test": "echo && echo \"* * * * * * * * * * * * * * * * * * * * * * * * * * * \" && echo \"About to run tests...\" && echo && if ! node ./node_modules/mocha/bin/mocha --timeout 10000 ; then echo && echo && echo \"- - -\" && echo \"Looks like something went wrong.\" && echo \"|  If you are not sure what to do next, try:\" && echo \"|  npm install mocha --save-dev\" && echo \"|  \" && echo \"|  And then:\" && echo \"|  mkdir test/\" && echo ; fi",
+    "debug": "node debug app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scottmac/sails-webpack-seed.git"
+  },
+  "author": "scottmac",
+  "license": ""
+}
