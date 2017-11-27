@@ -3172,7 +3172,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search-popup:hover {
-  cursor: url(img/close-icon.png), auto
+  cursor: url(../images/close-icon.png), auto
 }
 
 .search-popup.open {

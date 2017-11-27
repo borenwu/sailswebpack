@@ -52,6 +52,14 @@ module.exports.webpack = {
   module: {
     rules: [
       {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'url-loader',
+        query: {
+          limit: 8192,
+          name: '/img/[hash].[ext]'
+        }
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
@@ -71,7 +79,15 @@ module.exports.webpack = {
       },
       {
         test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
-        loader: "file-loader"
+        loader: "file-loader",
+        options: {
+          // publicPath:'/font/',
+          outputPath:'/font/',
+          name: '[name].[ext]'
+        },
+        // query: {
+        //   name: '../[name].[ext]'
+        // }
       }
     ],
   },
@@ -103,10 +119,10 @@ module.exports.webpack = {
         from: './assets/images',
         to: path.resolve(__dirname, '..', '.tmp', 'public', 'images')
       },
-      {
-        from: './assets/font',
-        to: path.resolve(__dirname, '..', '.tmp', 'public', 'font')
-      }
+      // {
+      //   from: './assets/font',
+      //   to: path.resolve(__dirname, '..', '.tmp', 'public', 'font')
+      // }
     ]),
 
     new webpack.ProvidePlugin({

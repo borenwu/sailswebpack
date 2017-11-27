@@ -4,8 +4,12 @@
     <title>New Sails App</title>
 
     <!-- Viewport mobile tag for sensible mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no" />
 
+    <title>Chelsea</title>
     <!--
         Stylesheets and Preprocessors
         ==============================
@@ -28,12 +32,15 @@
     -->
 
     <!--STYLES-->
-    <!--STYLES END-->
     <script type="text/javascript" src="/js/layout.bundle.js"></script>
-    <link rel="stylesheet" href="styles/layout.bundle.css">
+    <!--STYLES END-->
+
+
+    <!--<link rel="stylesheet" href="styles/layout.bundle.css">-->
   </head>
 
   <body>
+    {{>header}}
     {{{body}}}
 
 
@@ -86,6 +93,7 @@
     -->
 
     <!--SCRIPTS-->
+
     <!--SCRIPTS END-->
   </body>
 </html>
