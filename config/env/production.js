@@ -380,7 +380,7 @@ module.exports = {
         dry: false
       }),
 
-      // This plugin copies the `images` and `fonts` folders into
+      // This plugin copies the `images` and `font` folders into
       // the .tmp/public folder.  You can add any other static asset
       // folders to this list and they'll be copied as well.
       new CopyWebpackPlugin([
@@ -389,7 +389,7 @@ module.exports = {
           to: path.resolve(__dirname, '..', '.tmp', 'public', 'images')
         },
         {
-          from: './assets/fonts',
+          from: './assets/font',
           to: path.resolve(__dirname, '..', '.tmp', 'public', 'fonts')
         }
       ]),

@@ -51,6 +51,14 @@ module.exports.webpack = {
   ***************************************************************************/
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015']
+        }
+      },
       // Extract less files
       {
         test: /\.css$/,
@@ -87,7 +95,7 @@ module.exports.webpack = {
       dry: false
     }),
 
-    // This plugin copies the `images` and `fonts` folders into
+    // This plugin copies the `images` and `font` folders into
     // the .tmp/public folder.  You can add any other static asset
     // folders to this list and they'll be copied as well.
     new CopyWebpackPlugin([
@@ -96,8 +104,8 @@ module.exports.webpack = {
         to: path.resolve(__dirname, '..', '.tmp', 'public', 'images')
       },
       {
-        from: './assets/fonts',
-        to: path.resolve(__dirname, '..', '.tmp', 'public', 'fonts')
+        from: './assets/font',
+        to: path.resolve(__dirname, '..', '.tmp', 'public', 'font')
       }
     ]),
 
