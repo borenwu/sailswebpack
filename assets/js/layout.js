@@ -1,7 +1,13 @@
 // import jQuery from 'jquery';
 // window.jQuery = jQuery
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min.js'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/js/bootstrap.min.js'
+
+import './lib/vendor'
+import './lib/main'
+
+import '../styles/css/vendor.css'
+import '../styles/css/style.css'
 
 
 // Require the sockets.js file if you want to be able to use the socket client to
