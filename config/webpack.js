@@ -26,8 +26,9 @@ module.exports.webpack = {
   *                                                                          *
   ***************************************************************************/
   entry: {
+
     'homepage': './assets/js/homepage.js',
-    'layout': './assets/js/layout.js'
+    'layout': './assets/js/layout.js',
   },
 
 

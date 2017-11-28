@@ -3,6 +3,11 @@
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import 'bootstrap/dist/js/bootstrap.min.js'
 
+import '../styles/css/vendor.css'
+import '../styles/layout.css'
+
+import './lib/vendor'
+import './lib/main'
 
 
 
