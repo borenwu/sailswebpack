@@ -6,16 +6,18 @@
 import '../styles/css/vendor.css'
 import '../styles/layout.css'
 
-import './lib/vendor'
-import './lib/main'
+import vendor from './lib/vendor'
+import main from './lib/main'
 
 
 
 // Require the sockets.js file if you want to be able to use the socket client to
 // do things like `io.socket.get()` inside of this script.
-let io = require('../dependencies/sails.io.js');
+import io from '../dependencies/sails.io.js';
+
 
 
 // To make the socket client available globally, uncomment the next line:
 window.io = io;
+window.Swiper = vendor
 
