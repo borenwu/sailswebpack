@@ -1,5 +1,5 @@
-// import jQuery from 'jquery';
-// window.jQuery = jQuery
+import jQuery from 'jquery';
+
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import 'bootstrap/dist/js/bootstrap.min.js'
 
@@ -20,4 +20,4 @@ import io from '../dependencies/sails.io.js';
 // To make the socket client available globally, uncomment the next line:
 window.io = io;
 window.Swiper = vendor
-
+window.$ = jQuery
